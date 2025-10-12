@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>Revista Digital de Movilidad, Logística e Innovación Tecnológica</h3>
-  <p>Impulsando el futuro del transporte y la logística en Latinoamérica</p>
+  <p>El Pulso de la movilidad</p>
 </div>
 
 ---
