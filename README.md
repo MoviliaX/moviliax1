@@ -9,15 +9,15 @@
 
 ## 📖 Acerca de MoviliaX
 
-MoviliaX es una revista digital especializada en movilidad, logística e innovación tecnológica para Latinoamérica, dirigida a profesionales, empresas y gobiernos del sector.
+MoviliaX busca consolidarse como la plataforma de conocimiento más confiable de América Latina sobre movilidad y logística, alcanzando 100,000+ lectores mensuales en 24 meses mediante contenido de alto valor, análisis de datos exclusivos y una comunidad activa de expertos del sector.
 
-### 🎯 Visión
+## 🔭 VISIÓN
 
-Ser la revista digital líder en Latinoamérica sobre movilidad, logística e innovación tecnológica, referente de información confiable y de vanguardia para profesionales, empresas y gobiernos.
+"Ser la plataforma de conocimiento más confiable de América Latina sobre movilidad y logística, donde profesionales, empresas y gobiernos encuentran las ideas, datos y conexiones que necesitan para navegar la transformación del sector."
 
-### 🚀 Misión
+## 🎯 MISIÓN
 
-Difundir conocimiento, innovación y tendencias que impulsen el desarrollo sostenible y tecnológico del sector transporte y logístico, conectando a los actores clave del ecosistema mediante contenido digital de alto valor.
+"Generar y compartir conocimiento estratégico sobre movilidad, logística e innovación tecnológica mediante periodismo de investigación, análisis de datos exclusivos y una comunidad activa de expertos, impulsando decisiones más inteligentes y sostenibles en toda Latinoamérica."
 
 ---
 
@@ -33,25 +33,38 @@ Difundir conocimiento, innovación y tendencias que impulsen el desarrollo soste
 
 ## 📚 Temáticas Principales
 
-- **Movilidad Urbana**: Transporte público, micromovilidad, ciudades inteligentes
-- **Logística**: Cadena de suministro, última milla, e-commerce
-- **Tecnología**: IoT, IA, automatización, vehículos autónomos
-- **Sostenibilidad**: Electromovilidad, energías limpias, economía circular
-- **Innovación**: Startups, casos de éxito, tendencias globales
-- **Regulación**: Políticas públicas, normativas, marcos legales
+- **Movilidad Urbana** Transporte público, micromovilidad, ciudades inteligentes
+- **Logística Digital** E-commerce, última milla, automatización
+- **Electromovilidad** EVs, infraestructura de carga, políticas
+- **Nearshoring** Cadenas de suministro, inversión, oportunidades
+- **Innovación Tech** IA, IoT, blockchain en logísticas
 
 ---
 
 ## 🛠️ Tecnologías
 
-_Por definir según las necesidades del proyecto_
+Stack Tecnológico
+Frontend
 
-Opciones sugeridas:
-- Frontend: React, Next.js, Vue.js
-- Backend: Node.js, Python, PHP
-- CMS: Strapi, Ghost, WordPress
-- Base de datos: PostgreSQL, MongoDB, MySQL
-- Hosting: Vercel, Netlify, AWS, DigitalOcean
+Framework: Next.js 14 (React)
+Hosting: Vercel (deploy automático)
+CMS: Strapi o Ghost (headless)
+Analytics: Google Analytics 4 + Plausible
+Email: ConvertKit o Mailchimp
+
+Backend
+
+Base de datos: PostgreSQL (Supabase)
+API: REST + GraphQL
+Storage: Cloudflare R2 (imágenes/PDFs)
+
+Herramientas
+
+SEO: Ahrefs + SEMrush
+Design: Figma + Canva Pro
+Código: GitHub + VS Code
+Project Management: Notion + Linear
+Comunicación: Slac
 
 ---
 
