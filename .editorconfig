@@ -1,0 +1,103 @@
+# ==================================
+# MOVILIAX - EditorConfig
+# ==================================
+# Configuración para mantener consistencia
+# de código en diferentes editores
+# https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# ----------------------------------
+# Configuración por defecto (todos los archivos)
+# ----------------------------------
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# ----------------------------------
+# JavaScript / TypeScript / JSX / TSX
+# ----------------------------------
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+quote_type = single
+max_line_length = 100
+
+# ----------------------------------
+# JSON
+# ----------------------------------
+[*.json]
+indent_size = 2
+
+# ----------------------------------
+# YAML
+# ----------------------------------
+[*.{yml,yaml}]
+indent_size = 2
+
+# ----------------------------------
+# Markdown
+# ----------------------------------
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# ----------------------------------
+# CSS / SCSS / SASS
+# ----------------------------------
+[*.{css,scss,sass}]
+indent_size = 2
+
+# ----------------------------------
+# HTML
+# ----------------------------------
+[*.html]
+indent_size = 2
+
+# ----------------------------------
+# Python (si se usa)
+# ----------------------------------
+[*.py]
+indent_size = 4
+max_line_length = 88
+
+# ----------------------------------
+# Makefile
+# ----------------------------------
+[Makefile]
+indent_style = tab
+
+# ----------------------------------
+# Package.json / Composer.json
+# ----------------------------------
+[{package.json,composer.json}]
+indent_size = 2
+
+# ----------------------------------
+# Docker
+# ----------------------------------
+[{Dockerfile,docker-compose.yml}]
+indent_size = 2
+
+# ----------------------------------
+# Shell scripts
+# ----------------------------------
+[*.sh]
+indent_size = 2
+end_of_line = lf
+
+# ----------------------------------
+# Archivos de configuración
+# ----------------------------------
+[*.{conf,config}]
+indent_size = 2
+
+# ----------------------------------
+# Environment files
+# ----------------------------------
+[.env*]
+insert_final_newline = false
