@@ -161,7 +161,7 @@ Para el uso del contenido editorial, por favor contacta a MoviliaX directamente.
 ## 📧 Contacto
 
 - **Website**: https://moviliax.lat
-- **Email**: [Por definir]
+- **Email**:   contacto_moviliax@gmail.com
 - **LinkedIn**: [Por definir]
 - **Twitter**: [Por definir]
 
