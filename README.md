@@ -180,8 +180,8 @@ Para el uso del contenido editorial, por favor contacta a MoviliaX directamente.
 - **Website**: https://moviliax.lat
 - **Email**:   contactomoviliax@gmail.com
 - **LinkedIn**: http://linkedin.com/company/moviliax
-- **Twitter**: @MoviliaX
----
+- **Twitter**: @MoviliaX](https://x.com/MoviliaX
+
 
 <div align="center">
   <p>Hecho con ❤️ para impulsar la movilidad y logística en Latinoamérica</p>
