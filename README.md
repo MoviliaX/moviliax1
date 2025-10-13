@@ -112,7 +112,24 @@ MoviliaX/
 
 ## 👥 Equipo
 
-_Por definir_
+Estructura Organizacional
+FASE 1 (Meses 1-6) - Core Team
+Director Editorial (Founder) - Full time
+Estrategia de contenido
+Edición y curación
+Relaciones públicas
+Escritor/Periodista #1 - Freelance (3 artículos/semana)
+Artículos de análisis
+Casos de estudio
+Community Manager - Part time (20hrs/semana)
+Redes sociales
+Engagement
+Newsletter
+Diseñador Gráfico - Freelance (por proyecto)
+Infografías
+Posts para redes
+Branding
+
 
 ---
 
@@ -162,9 +179,8 @@ Para el uso del contenido editorial, por favor contacta a MoviliaX directamente.
 
 - **Website**: https://moviliax.lat
 - **Email**:   contacto_moviliax@gmail.com
-- **LinkedIn**: [Por definir]
-- **Twitter**: [Por definir]
-
+- **LinkedIn**: http://linkedin.com/company/moviliax
+- **Twitter**: @MoviliaX
 ---
 
 <div align="center">
