@@ -1,56 +1,64 @@
-# MoviliaX - .gitignore
+# ==================================
+# MOVILIAX - .gitignore
+# ==================================
 
-# ============================================
-# DEPENDENCIAS Y PAQUETES
-# ============================================
-
-# Node.js
+# Dependencias
 node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Producción
+.vercel/
+.netlify/
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-.pnpm-store/
+*.log
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
-venv/
-env/
-ENV/
-.venv
+# Sistema Operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
 
-# ============================================
-# ARCHIVOS DE BUILD Y DISTRIBUCIÓN
-# ============================================
+# IDEs y Editores
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
 
-# Build outputs
-dist/
-build/
-*.egg-info/
-.next/
-out/
-.nuxt/
-.cache/
-.parcel-cache/
-.output/
-
-# Static files
-static/
-public/uploads/
-public/build/
-
-# ============================================
-# ARCHIVOS DE ENTORNO Y CONFIGURACIÓN
-# ============================================
-
-# Variables de entorno
+# Variables de Entorno
 .env
 .env.local
 .env.development.local
@@ -58,203 +66,56 @@ public/build/
 .env.production.local
 .env*.local
 
-# Configuración sensible
-config.local.js
-secrets.json
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Certificados
 *.pem
 *.key
-*.cert
+*.crt
 
-# ============================================
-# BASES DE DATOS
-# ============================================
-
-# SQLite
-*.db
+# Base de Datos
 *.sqlite
 *.sqlite3
+*.db
+*.sql.backup
 
-# PostgreSQL
-*.dump
-*.sql
+# Docker
+docker-compose.override.yml
 
-# ============================================
-# LOGS Y TEMPORALES
-# ============================================
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-lerna-debug.log*
-pnpm-debug.log*
+# Backups
+*.backup
+*.bak
+backup_*.sql
 
 # Archivos temporales
 tmp/
 temp/
 *.tmp
-*.temp
+
+# Cache
 .cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
 
-# ============================================
-# IDEs Y EDITORES
-# ============================================
+# Misc
+*.orig
+.prettierignore
 
-# Visual Studio Code
-.vscode/
-!.vscode/extensions.json
-!.vscode/settings.json.example
-
-# JetBrains (WebStorm, PyCharm, etc.)
-.idea/
-*.iml
-*.iws
-*.ipr
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Vim
-*.swp
-*.swo
-*~
-
-# Emacs
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-
-# ============================================
-# SISTEMAS OPERATIVOS
-# ============================================
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-*.stackdump
-[Dd]esktop.ini
-$RECYCLE.BIN/
-*.lnk
-
-# Linux
-*~
-.directory
-.Trash-*
-
-# ============================================
-# CMS Y FRAMEWORKS ESPECÍFICOS
-# ============================================
-
-# WordPress
-wp-config.php
-wp-content/uploads/
-wp-content/cache/
-wp-content/backup/
-
-# Ghost
-content/data/
-content/logs/
-content/themes/casper/
+# Monorepo
+.turbo
+.rush
 
 # Strapi
-.strapi-updater.json
 .strapi/
-build/
-exports/
+.strapi-updater.json
 
-# Next.js
-.next/
-out/
-next-env.d.ts
+# Build Info
+.next/cache/
+.next/static/chunks/
+.next/server/
 
-# Gatsby
-.cache/
-public/
-
-# ============================================
-# TESTING Y COBERTURA
-# ============================================
-
-# Testing
-coverage/
-.nyc_output/
-*.lcov
-.coverage
-htmlcov/
-.pytest_cache/
-junit.xml
-
-# ============================================
-# CONTENIDO MULTIMEDIA PESADO (OPCIONAL)
-# ============================================
-
-# Descomentar si no quieres versionar archivos multimedia pesados
-# *.mp4
-# *.mov
-# *.avi
-# *.mkv
-# *.psd
-# *.ai
-
-# ============================================
-# BACKUPS Y ARCHIVOS GENERADOS
-# ============================================
-
-# Backups
-*.bak
-*.backup
-*.old
-backup/
-backups/
-
-# Archivos comprimidos (generados)
-*.zip
-*.tar.gz
-*.rar
-*.7z
-
-# ============================================
-# ANÁLISIS Y REPORTES
-# ============================================
-
-# Bundle analysis
-.bundle-analyzer/
-bundle-stats.json
-
-# Lighthouse reports
-lighthouse-report.html
-
-# ============================================
-# OTROS
-# ============================================
-
-# Lock files opcionales (descomentar según preferencia)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
-
-# Archivos de sistema
-*.stackdump
-
-# Pruebas locales
-playground/
-sandbox/
-test-output/
+# Analytics
+.vercel/
