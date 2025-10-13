@@ -178,7 +178,7 @@ Para el uso del contenido editorial, por favor contacta a MoviliaX directamente.
 ## 📧 Contacto
 
 - **Website**: https://moviliax.lat
-- **Email**:   contacto_moviliax@gmail.com
+- **Email**:   contactomoviliax@gmail.com
 - **LinkedIn**: http://linkedin.com/company/moviliax
 - **Twitter**: @MoviliaX
 ---
