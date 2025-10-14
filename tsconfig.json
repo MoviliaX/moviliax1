@@ -7,6 +7,16 @@
       "DOM",
       "DOM.Iterable"
     ],
+    {
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/lib": ["./src/lib"],
+      "@/lib/*": ["./src/lib/*"]
+    }
+  }
+}
     "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "bundler",
