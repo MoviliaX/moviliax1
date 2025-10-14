@@ -1042,11 +1042,13 @@ MoviliaX tiene una oportunidad única en el mercado latinoamericano. El nearshor
 ---
 
 **Documento vivo - Versión 1.0**
-Última actualización: Octubre 2024
-Próxima revisión: Enero 2025
+Última actualización: Octubre 2025
+Próxima revisión: Enero 2026
 
 ---
 
 *"El mejor momento para plantar un árbol fue hace 20 años. El segundo mejor momento es ahora."*
 
 🚀 **¡Vamos a construir MoviliaX!**
+
+**Elaborado: HManuel Admnistración e Innovación Digital**
