@@ -1,0 +1,472 @@
+/* src/styles/utilities.css */
+/* Utilidades CSS personalizadas para MoviliaX */
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+
+/* Flexbox utilities */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.flex-start {
+  @apply flex items-center justify-start;
+}
+
+.flex-end {
+  @apply flex items-center justify-end;
+}
+
+.flex-col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+/* Grid utilities */
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ============================================
+   SPACING UTILITIES
+   ============================================ */
+
+/* Stack spacing */
+.stack > * + * {
+  margin-top: var(--spacing-4);
+}
+
+.stack-sm > * + * {
+  margin-top: var(--spacing-2);
+}
+
+.stack-lg > * + * {
+  margin-top: var(--spacing-6);
+}
+
+/* Inline spacing */
+.inline > * + * {
+  margin-left: var(--spacing-4);
+}
+
+.inline-sm > * + * {
+  margin-left: var(--spacing-2);
+}
+
+.inline-lg > * + * {
+  margin-left: var(--spacing-6);
+}
+
+/* ============================================
+   VISUAL UTILITIES
+   ============================================ */
+
+/* Aspect ratios */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-3-2 {
+  aspect-ratio: 3 / 2;
+}
+
+/* Object fit */
+.object-cover {
+  object-fit: cover;
+  object-position: center;
+}
+
+.object-contain {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* ============================================
+   BACKGROUND UTILITIES
+   ============================================ */
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+}
+
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+}
+
+/* Pattern backgrounds */
+.bg-dots {
+  background-image: radial-gradient(circle, var(--color-border) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-grid {
+  background-image: 
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* ============================================
+   BORDER UTILITIES
+   ============================================ */
+
+/* Gradient borders */
+.border-gradient {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Dashed borders */
+.border-dashed-primary {
+  border: 2px dashed var(--color-primary);
+}
+
+/* ============================================
+   INTERACTIVE UTILITIES
+   ============================================ */
+
+/* Hover effects */
+.hover-lift {
+  transition: transform var(--duration-300) var(--ease-out);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.hover-scale {
+  transition: transform var(--duration-300) var(--ease-out);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-brightness {
+  transition: filter var(--duration-300) var(--ease-out);
+}
+
+.hover-brightness:hover {
+  filter: brightness(1.1);
+}
+
+/* Focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.focus-visible-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2;
+}
+
+/* ============================================
+   LOADING UTILITIES
+   ============================================ */
+
+/* Skeleton loaders */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-bg-secondary) 25%,
+    var(--color-bg-tertiary) 50%,
+    var(--color-bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Pulse effect */
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ============================================
+   SCROLL UTILITIES
+   ============================================ */
+
+/* Smooth scroll */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Snap scroll */
+.snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snap-y {
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}
+
+.snap-end {
+  scroll-snap-align: end;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-full);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-border-dark);
+  border-radius: var(--radius-full);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+/* ============================================
+   VISIBILITY UTILITIES
+   ============================================ */
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Not sr-only */
+.not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ============================================
+   OVERLAY UTILITIES
+   ============================================ */
+
+/* Backdrop blur */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Overlay */
+.overlay {
+  @apply absolute inset-0;
+  background: var(--color-bg-overlay);
+}
+
+.overlay-light {
+  @apply absolute inset-0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay-dark {
+  @apply absolute inset-0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* ============================================
+   TRUNCATE UTILITIES
+   ============================================ */
+
+/* Text truncate */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================================
+   POSITION UTILITIES
+   ============================================ */
+
+/* Center absolute */
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Center fixed */
+.center-fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+/* Container queries */
+@container (min-width: 640px) {
+  .container-sm\:text-lg {
+    font-size: var(--font-size-lg);
+  }
+}
+
+/* Safe areas */
+.safe-area-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-area-left {
+  padding-left: env(safe-area-inset-left);
+}
+
+.safe-area-right {
+  padding-right: env(safe-area-inset-right);
+}
+
+/* ============================================
+   PRINT UTILITIES
+   ============================================ */
+
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-visible {
+    display: block !important;
+  }
+
+  .print-break-before {
+    page-break-before: always;
+  }
+
+  .print-break-after {
+    page-break-after: always;
+  }
+
+  .print-avoid-break {
+    page-break-inside: avoid;
+  }
+}
