@@ -29,7 +29,7 @@ const nextConfig = {
   i18n: {
     locales: ['es', 'es-MX', 'es-CO', 'es-AR', 'es-CL', 'pt-BR'],
     defaultLocale: 'es-MX',
-    localeDetection: true,
+    localeDetection: false,
   },
 
   // Headers de seguridad
