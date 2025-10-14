@@ -103,7 +103,7 @@ const nextConfig = {
     NEXT_PUBLIC_SITE_DESCRIPTION: 'Movilidad y Logística Digital en América Latina',
   },
 
-  // Webpack customization
+ // Webpack customization
   webpack: (config, { dev, isServer }) => {
     // SVG como componentes React
     config.module.rules.push({
@@ -111,6 +111,41 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
 
+    // Optimizaciones
+    if (!dev && !isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          default: false,
+          vendors: false,
+          commons: {
+            name: 'commons',
+            chunks: 'all',
+            minChunks: 2,
+          },
+          lib: {
+            test: /[\\/]node_modules[\\/]/,
+            name(module) {
+              // Validar que module.context existe
+              if (!module.context) return 'npm.unknown';
+              
+              const match = module.context.match(
+                /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+              );
+              
+              // Validar que el match fue exitoso
+              if (!match || !match[1]) return 'npm.unknown';
+              
+              const packageName = match[1];
+              return `npm.${packageName.replace('@', '')}`;
+            },
+          },
+        },
+      };
+    }
+
+    return config;
+  },
     // Optimizaciones
     if (!dev && !isServer) {
       config.optimization.splitChunks = {
