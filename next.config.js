@@ -124,17 +124,22 @@ const nextConfig = {
             minChunks: 2,
           },
           lib: {
-            test: /[\\/]node_modules[\\/]/,
-            name(module) {
-              const packageName = module.context.match(
-                /[\\/]node_modules[\\/](.*?)([\\/]|$)/
-              )[1];
-              return `npm.${packageName.replace('@', '')}`;
-            },
-          },
-        },
-      };
-    }
+  test: /[\\/]node_modules[\\/]/,
+  name(module) {
+    // Validar que module.context existe
+    if (!module.context) return 'npm.unknown';
+    
+    const match = module.context.match(
+      /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+    );
+    
+    // Validar que el match fue exitoso
+    if (!match || !match[1]) return 'npm.unknown';
+    
+    const packageName = match[1];
+    return `npm.${packageName.replace('@', '')}`;
+  },
+},
 
     return config;
   },
