@@ -6,7 +6,7 @@ export default function Home() {
           MoviliaX
         </h1>
         <p className="text-2xl text-gray-600 mb-8">
-          Movilidad y Logística Digital en América Latina
+          Revista digital líder en movilidad y logística digital e innovación tecnológica para América Latina
         </p>
         <div className="flex gap-4 justify-center">
           <a 
