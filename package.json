@@ -31,7 +31,8 @@
     "react-markdown": "^9.0.0",
     "remark-gfm": "^4.0.0",
     "sharp": "^0.33.0",
-    "@vercel/analytics": "^1.1.1"
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.2.0",
