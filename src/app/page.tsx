@@ -1,3 +1,6 @@
+```tsx
+'use client';
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#0A0F2C] text-white">
@@ -164,4 +167,5 @@ export default function HomePage() {
       </footer>
     </main>
   );
-}
+  }
+```
