@@ -1,74 +1,40 @@
 {
   "compilerOptions": {
-    /* Configuración de Lenguaje */
     "target": "ES2022",
     "lib": [
       "ES2022",
       "DOM",
       "DOM.Iterable"
     ],
-    {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@/lib": ["./src/lib"],
-      "@/lib/*": ["./src/lib/*"]
-    }
-  }
-}
     "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "allowJs": true,
-    /* Interoperabilidad */
     "isolatedModules": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    /* Type Checking */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
+   "noUncheckedIndexedAccess": true,
     "noImplicitReturns": true,
-    /* Bundler Mode */
     "skipLibCheck": true,
     "incremental": true,
-    /* Path Mapping */
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@/components/*": [
-        "./src/components/*"
-      ],
-      "@/lib/*": [
-        "./src/lib/*"
-      ],
-      "@/styles/*": [
-        "./src/styles/*"
-      ],
-      "@/types/*": [
-        "./src/types/*"
-      ],
-      "@/utils/*": [
-        "./src/utils/*"
-      ],
-      "@/hooks/*": [
-        "./src/hooks/*"
-      ],
-      "@/config/*": [
-        "./src/config/*"
-      ],
-      "@/content/*": [
-        "./content/*"
-      ]
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/config/*": ["./src/config/*"],
+      "@/content/*": ["./content/*"]
     },
-    /* Next.js Specific */
     "plugins": [
       {
         "name": "next"
